@@ -7,6 +7,7 @@ const Bottom = (props) => {
   const { muted, playing, toggleAudio, toggleVideo, leaveRoom } = props;
 
   return (
+
     <div className={styles.bottomMenu}>
       {muted ? (
         <MicOff
@@ -26,8 +27,9 @@ const Bottom = (props) => {
           onClick={toggleVideo}
         />
       )}
-      <PhoneOff size={55} className={cx(styles.icon)} onClick={leaveRoom}/>
+      <PhoneOff size={55} className={cx(styles.icon)} onClick={leaveRoom} />
     </div>
+
   );
 };
 

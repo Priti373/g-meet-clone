@@ -28,7 +28,7 @@ const usePlayer = (myId, roomId, peer) => {
             if (copy[myId]) {
                 copy[myId].muted = !copy[myId].muted;
             } else {
-                console.error(`User with ID ${userId} not found.`);
+                console.error(`User with ID ${myId} not found.`);
             }
             return { ...copy }
         })
